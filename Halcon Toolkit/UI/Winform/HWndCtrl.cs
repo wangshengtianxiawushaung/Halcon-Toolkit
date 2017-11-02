@@ -6,8 +6,8 @@ using Halcon_Toolkit.ROIs;
 
 namespace Halcon_Toolkit.UI.Winform
 {
-    public delegate void IconicDelegate(int val);
-    public delegate void FuncDelegate();
+    public delegate void IconicDelegate(int val);//带参委托
+    public delegate void FuncDelegate();//不带参委托
 
     /// <summary>
     /// This class works as a wrapper class for the HALCON window
@@ -71,7 +71,7 @@ namespace Halcon_Toolkit.UI.Winform
         private HWindowControl viewPort;
 
         /// <summary>
-        /// Instance of ROIController, which manages ROI interaction
+        /// Instance of ROIController, which manages ROI interaction实例化
         /// </summary>
         private ROIController roiManager;
 
